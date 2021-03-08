@@ -26,3 +26,6 @@ The package handling communication with the VESC 6 Plus.
 
 ## waypoint_logger
 The node that records the car's current position in the world, requires particle_filter to work.
+
+## Gmapping Slam
+The launch are contained of Gmapping slam launch file, requires ros-melodic-gmapping to work.
