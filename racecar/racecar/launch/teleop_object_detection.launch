@@ -1,0 +1,6 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+    <include file="$(find racecar)/launch/teleop.launch" />
+    <include file="$(find racecar)/launch/object_detection.launch" />
+
+</launch>
