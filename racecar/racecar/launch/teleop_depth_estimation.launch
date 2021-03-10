@@ -1,0 +1,6 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+    <include file="$(find racecar)/launch/teleop.launch" />
+    <include file="$(find racecar)/launch/depth_estimation.launch" />
+
+</launch>

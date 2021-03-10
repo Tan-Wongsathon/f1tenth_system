@@ -1,0 +1,11 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+    <include file="$(find realsense2_camera)/launch/rs_aligned_depth.launch" />
+    <!--include file="$(find darknet_ros)/launch/darknet_ros.launch" /-->
+    <node name="image_view" pkg="image_view" type="image_view" respawn="false" output="screen" >
+      <remap from="image" to="/camera/depth/image_rect_raw" />
+    </node>
+    
+    <!--node pkg="rqt_image_view" type="rqt_image_view" name="image_view_debug" args="/camera/color/image_raw" /-->
+
+</launch>
